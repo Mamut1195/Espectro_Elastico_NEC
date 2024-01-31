@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk
 import espectro as nec
 
 class EspectroElasticoUI():
@@ -83,11 +83,9 @@ class EspectroElasticoUI():
 
         Espectro_1.creacion_de_tuplas()
 
-        Espectro_1.extraccion_de_puntos(nombre_archivo = self.ruta_de_archivo.get() , ruta_de_archivo = self.nombre_archivo.get())
+        Espectro_1.extraccion_de_puntos(nombre_archivo = self.nombre_archivo.get() , ruta_de_archivo = self.ruta_de_archivo.get())
 
-        # Ejemplo de mensaje de salida
-        result_message = "El espectro elástico de respuesta se ha calculado."
-        tk.messagebox.showinfo("Resultado", result_message)
+
 
 if __name__ == "__main__":
     root = tk.Tk()
